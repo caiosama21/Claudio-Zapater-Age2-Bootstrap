@@ -1,0 +1,134 @@
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+#header {
+    height: 20vh;
+    width: 100%;
+    animation-name: animation_header;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.display-5 {
+    color: aquamarine;
+}
+
+.navbar-brand {
+    color: rgb(0, 4, 253);
+    font-size: 20px;
+}
+
+.nav-link {
+    color: rgb(0, 4, 253);
+    font-size: 20px;
+}
+
+#h1font {
+    font-family: 'Silkscreen', cursive;
+    font-size: large;
+    text-shadow: 2px 2px white;
+    perspective: 2500;
+    transition: 1s ease;
+}
+
+#h2font {
+    color: crimson;
+}
+
+.h1font:hover {
+    color: red;
+    transform: scale(1.25);
+    perspective: scale(2);
+    transition: all 5s;
+}
+
+@keyframes animation_header {
+    0% {
+        background: linear-gradient(90deg, rgba(255, 166, 166, 2) 0%, rgba(119, 0, 0, 1) 36%, rgba(119, 0, 0, 1) 64%, rgba(255, 155, 155, 1) 100%);
+    }
+
+    25% {}
+
+    50% {
+        background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(0, 24, 119, 1) 36%, rgba(0, 20, 119, 1) 64%, rgba(255, 0, 0, 1) 100%);
+    }
+
+    75% {
+        background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(0, 119, 30, 1) 36%, rgba(0, 119, 28, 1) 64%, rgba(255, 0, 0, 1) 100%);
+    }
+
+    100% {
+        background: linear-gradient(90deg, rgba(255, 166, 166, 1) 0%, rgba(119, 0, 0, 1) 36%, rgba(119, 0, 0, 1) 64%, rgba(255, 155, 155, 1) 100%);
+    }
+}
+
+#main {
+    height: -webkit-fill-available;
+}
+
+.sizer {
+    width: 100%;
+    height: 100%;
+  }
+
+.fotosmainsizer {
+    width: 20%;
+    height: 35%;
+}
+
+
+#footer {
+    height: 10vh;
+    position: absolute;
+    bottom: 0%;
+    
+    /* animation-name: animation_footer;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; */
+}
+
+.fotosfootersizer {
+    padding: 1px;
+    width: 80%;
+    margin: 0px;
+    height: 7vh;
+}
+
+@keyframes animation_footer {
+    0% {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 33%, rgba(255, 0, 0, 1) 100%);
+    }
+
+    25% {}
+
+    50% {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 33%, rgba(1, 25, 176, 1) 100%);
+    }
+
+    75% {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 2) 33%, rgba(1, 176, 33, 1) 100%);
+    }
+
+    100% {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 33%, rgba(255, 0, 0, 1) 100%);
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    #imgbanish {
+        width: 0%;
+     }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    #imgbanish {
+        width: 0%;
+     }
+
+}
